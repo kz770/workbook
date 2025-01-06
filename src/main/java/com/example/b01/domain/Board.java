@@ -22,4 +22,10 @@ public class Board extends BaseEntity {
 
     @Column(length=50, nullable = false)
     private String writer;
+
+    //제목과 내용을 수정하는 메서드
+    public void change(String title, String content) {
+        this.title=title;
+        this.content=content;
+    }
 }
